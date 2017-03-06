@@ -17,5 +17,5 @@ Route::get('/', function () {
 Route::get('/about', function () {
 //       echo "Hello Laravel!";
 //    return "Hello Laravel!";
-        view('welcome');
+    return view('welcome');
 });
