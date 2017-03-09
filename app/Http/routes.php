@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/page', function () {
+    echo $_ENV;
+});
 Route::get('/about', function () {
 //       echo "Hello Laravel!";
 //    return "Hello Laravel!";
