@@ -16,7 +16,8 @@ Route::get('/', function () {
 });
 Route::get('/page', function () {
     echo '<pre>';
-    print_r($_ENV);
+//    print_r($_ENV);
+    echo config('app.locale');
     echo '</pre>';
 });
 Route::get('/about', function () {
