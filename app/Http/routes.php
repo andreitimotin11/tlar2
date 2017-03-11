@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
     print 'sad';
 });
-Route::get('page/{id}', function (){});
+Route::get('page/{id}', function (){
+    return view('welcome');
+});
