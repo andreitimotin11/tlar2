@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
+    print 'sad';;
 });
 Route::get('/page', function () {
     echo '<pre>';
