@@ -30,6 +30,6 @@ Route::get('/about', function () {
 Route::post('/comments', function () {
 //       echo "Hello Laravel!";
 //    return "Hello Laravel!";
-    dd('s');
+    dump('s');
     return view('about');
 });
