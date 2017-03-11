@@ -15,21 +15,4 @@ Route::get('/', function () {
     return view('welcome');
     print 'sad';
 });
-Route::get('/page', function () {
-    echo '<pre>';
-//    print_r($_ENV);
-    echo config('app.locale');
-    echo Config::get('app.locale');
-    echo '</pre>';
-});
-Route::get('/about', function () {
-//       echo "Hello Laravel!";
-//    return "Hello Laravel!";
-    return view('about');
-});
-Route::match(['get', 'post'],'/comments', function () {
-//       echo "Hello Laravel!";
-//    return "Hello Laravel!";
-//    dump('s');
-    return view('about');
-});
+Route::get('page/{id}', function (){});
