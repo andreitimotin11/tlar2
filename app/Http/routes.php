@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-    print 'sad';;
+    print 'sad';
 });
 Route::get('/page', function () {
     echo '<pre>';
@@ -23,6 +23,11 @@ Route::get('/page', function () {
     echo '</pre>';
 });
 Route::get('/about', function () {
+//       echo "Hello Laravel!";
+//    return "Hello Laravel!";
+    return view('about');
+});
+Route::post('/comments', function () {
 //       echo "Hello Laravel!";
 //    return "Hello Laravel!";
     return view('about');
