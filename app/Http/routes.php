@@ -27,7 +27,7 @@ Route::get('/about', function () {
 //    return "Hello Laravel!";
     return view('about');
 });
-Route::any('/comments', function () {
+Route::post('/comments', function () {
 //       echo "Hello Laravel!";
 //    return "Hello Laravel!";
     return view('about');
