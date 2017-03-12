@@ -16,3 +16,4 @@ Route::get('/', function () {
     print 'sad';
 });
 Route::get('/about', 'FirstController@show');
+Route::resource('/pages');

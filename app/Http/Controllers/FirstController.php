@@ -10,6 +10,6 @@ class FirstController extends Controller
 {
     //
     public function show(){
-        echo gettype(__METHOD__);
+        echo __METHOD__;
     }
 }
