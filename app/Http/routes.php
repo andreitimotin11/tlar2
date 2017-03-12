@@ -16,4 +16,4 @@ Route::get('/', function () {
     print 'sad';
 });
 Route::get('/about', 'FirstController@show');
-Route::get('/article/{page}', ['uses'=>'FirstController@show', 'as'=> 'article']);
+Route::get('/article/{page}', ['uses'=>'FirstController@show', 'as'=> 'article', 'middleware'=> 'mymiddle']);
