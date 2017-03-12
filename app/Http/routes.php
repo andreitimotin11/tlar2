@@ -15,14 +15,4 @@ Route::get('/', function () {
     return view('welcome');
     print 'sad';
 });
-Route::get('page/{id}', function (){
-    return view('welcome');
-})->where('id','[0-9]+');
-Route::group(['prefix' => 'admin'], function (){
-    Route::get('page/create', function (){
-       echo 'page/create/';
-    });
-    Route::get('page/edit', function (){
-       echo 'page/edit/';
-    });
-});
+Route::get('/about', 'FirstController@index');
