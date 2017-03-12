@@ -23,6 +23,6 @@ Route::group(['prefix' => 'admin'], function (){
        echo 'page/create/';
     });
     Route::get('page/edit', function (){
-       echo 'page/create/';
+       echo 'page/edit/';
     });
 });
