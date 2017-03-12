@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
     print 'sad';
 });
-Route::get('/about', 'FirstController@index');
+Route::get('/about', 'FirstController@show');
