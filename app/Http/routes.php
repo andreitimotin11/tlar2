@@ -17,3 +17,4 @@ Route::get('/', function () {
 });
 Route::get('/about', 'FirstController@show');
 Route::resource('/pages', 'Admin\CoreResource');
+Route::controller('/pages','PagesController');
