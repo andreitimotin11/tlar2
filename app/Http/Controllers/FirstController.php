@@ -9,4 +9,7 @@ use App\Http\Requests;
 class FirstController extends Controller
 {
     //
+    public function show(){
+        echo '1';
+    }
 }
