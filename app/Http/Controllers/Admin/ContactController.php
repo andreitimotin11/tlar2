@@ -11,6 +11,5 @@ class ContactController extends Controller
 {
     public function show(){
         return view('default.contact',['title'=>'Contacts'] );
-        .
     }
 }
