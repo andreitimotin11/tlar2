@@ -9,6 +9,6 @@ use App\Http\Requests;
 class FirstController extends Controller
 {
     public function show(){
-       return view('default.welcome');
+       return view('welcome');
     }
 }
