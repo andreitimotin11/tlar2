@@ -9,8 +9,8 @@ use App\Http\Requests;
 class FirstController extends Controller
 {
     public function show(){
-        echo view();
-        dd();
+        echo '';
+        dd(view());
        return view('welcome');
     }
 }
