@@ -10,7 +10,7 @@ class FirstController extends Controller
 {
     public function show(){
         echo '';
-        dd(view());
+        var_dump(view());
        return view('welcome');
     }
 }
