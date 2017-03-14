@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('welcome');
     print 'sad';
 })->name('home');
-Route::get('/about', 'FirstController@show');
 Route::get('/article/{page}', ['uses'=>'FirstController@show', 'as'=> 'article', 'middleware'=> 'mymiddle']);
 Route::match(['get','post'],'/contact', ['uses'=>'Admin\ContactController@show', 'as'=> 'contact', 'middleware'=> 'mymiddle']);
